@@ -1,0 +1,90 @@
+@charset "UTF-8";
+header{
+	width:100%;
+	height:auto;
+	text-align: center;//中央揃え
+}
+header img{
+	width:100px;
+	height:auto;
+	margin:0 auto;//中央揃え
+}
+nav {
+	width:100%;
+	height: 50px;
+	margin:0 auto;
+}
+nav ul{
+	width:900px;
+	heigth:auto;
+	margin: auto;
+	text-align: center;
+}
+nav li+ li{
+	border-left: 2px solid #CCCCCC;
+}
+nav li{
+	width:250px;
+	height:auto;
+	display:inline-block;//中央揃え
+	margin:0 auto;
+
+}
+.intro{
+	width:900px;
+	heigth:600px;
+	margin:auto;
+}
+.intro h1{
+	font-size:20px;
+	text-align: center;
+	padding:30px 50px;
+	border-bottom:3px solid #ec6c2d;
+}
+.intro p{
+	padding:40px;
+	text-align:center;
+	line-heigth:30px;
+}
+.intro ul{
+	padding:0px;
+	width:800px;
+	height:60px;
+	margin:auto;
+	text-align:center;
+}
+.intro li{
+	width:250px;
+	heigth:60px;
+	display:inline-block;
+	margin:30px;
+	text-align:center;
+	line-height:60px;
+	list-style:none;
+	color:#ffffff;
+	font-weigth:800;
+	background-color:#ec6c2d;
+}
+.top-img{
+	width:100%;
+	height:auto;
+	margin:0 auto;
+	border-top:8px solid #ec6c2d;
+}
+.top-img img{
+	text-align:center;
+	width:100%;
+	height:auto;
+}
+/*margin
+要素の外側の余白を指定している
+paddingとの境目はborder
+*/
+/*padding
+要素の内側の余白を指定している
+background-colorの適用範囲。
+*/
+/*float
+要素を横並びにすることができる
+要素を右寄せ、左寄せする
+*/
