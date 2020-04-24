@@ -1,0 +1,11 @@
+@media screen and (max-width:768px) {
+	.event_img {
+		margin: 45px auto 0;
+		}
+	.event_img .event_set {
+		float: none;
+		width: 100%;
+		padding: 20px 0;
+		margin-bottom: 0;
+	}
+}
