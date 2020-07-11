@@ -1,5 +1,5 @@
 /* https://projects.lukehaas.me/css-loaders/ */
-.loader {
+/*.loader {
 	color: rgb(248,203,90);
 	font-size: 90px;
 	text-indent: -9999em;
@@ -42,3 +42,37 @@
 		transform: rotate(360deg);
 	}
 }
+*/
+#loading {
+	width: 100vw;
+	height: 100vh;
+	transition: all 1s;
+	background-color: #0bd;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+  }
+  .spinner {
+	width: 100px;
+	height: 100px;
+	margin: 200px auto;
+	background-color: #fff;
+	border-radius: 100%;
+	animation: sk-scaleout 1.0s infinite ease-in-out;
+  }
+  /* Loading Animation */
+  @keyframes sk-scaleout {
+	0% {
+	  transform: scale(0);
+	} 100% {
+	  transform: scale(1.0);
+	  opacity: 0;
+	}
+  }
+  
+  /* Hide Loading Block */
+  .loaded {
+	opacity: 0;
+	visibility: hidden;
+  }

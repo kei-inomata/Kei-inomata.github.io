@@ -1,5 +1,6 @@
 
 /********** ここからローディングアニメーション **********/
+/*
 window.addEventListener('DOMContentLoaded', ()=>{
   const all_img = document.getElementsByTagName("img");    //すべての画像を取得（背景画像は含めない）
   const img_len = all_img.length;                          //ページ内に存在する画像の総数
@@ -29,12 +30,24 @@ window.addEventListener('DOMContentLoaded', ()=>{
     } 
   }
 });
+*/
+window.onload = function() {
+  const spinner = document.getElementById('loading');
+ console.log(spinner);
+  // Add .loaded to .loading
+  loading.classList.add('loaded');
+}
 /********** ここまでローディングアニメーション **********/
 
 
 window.onload = ()=> {
+  const spinner = document.getElementById('loading');
+  console.log(spinner);
+   // Add .loaded to .loading
+   spinner.classList.add('loaded');
 
 /********** ここからナビゲーションスクロール **********/
+
   //HTMLのナビゲーションバーにあるボタンを取得
   const toSecondPageButton = document.getElementById("js-toSecondPage");
   //ボタンがクリックされた際に実行する関数を登録
